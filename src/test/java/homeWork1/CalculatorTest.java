@@ -43,7 +43,7 @@ class CalculatorTest {
     }
 
     @Test
-    @DisplayName("Test negative purchase amount")
+    @DisplayName("Проверка отрицательной суммы покупок")
     void testNegativeAmount(){
         assertThrows(ArithmeticException.class, () -> calculator.calculateDiscount(-300, 30),
                 "При отрицательной сумме покупок выбрасывается ArithmeticException");
